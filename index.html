@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="./custom.scss">
   </head>
 
-  <div class="topnav">
-      <nav>
-
-      </nav>
-  </div>
   <h1 class="text-center container">
       <img id="logo" class="rounded" src="/images/amazonlogo.png" alt="responsive-image">
   </h1>
@@ -34,13 +29,15 @@
                         <p id="notice">By continuing, you agree to Amazon's 
                             <a href="#Use">Conditions of Use</a> 
                             and <a href="Privacy_notice">Privacy Notice</a></p>
-                        <div id="need-help" class="dropleft">
-                            <a type="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#NeedHelp">
-                              Need Help?
-                            </a>
-                            <div class="dropdown-menu">
-                              <option>Forgot Password?</option>
-                              <option>Other issues with Sign-In</option>
+                        <div id="need-help">
+                            <a id="need-help-button" class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-controls="collapseExample">
+                                ► Need Help?</a>
+                            <div class="collapse" id="collapseExample">
+                              <div class="card card-body">
+                                <a href="#">Forgot Password?</a>
+                                <a href="#">Other issues with Sign-In</a>
+                              </div>
+                            </div>
                             </div>
                           </div>
                         </textarea> 
@@ -54,8 +51,11 @@
         <div id="new-to-amazon-div" class="col-md-4 offset-md-4 align-center text-center text-muted">
             <span id="new-to-amazon" class="text-muted">New to Amazon?</span> 
         </div>
-        <button id="create-account-button" class="btn gradient-button btn-outline-dark btn-sm col-4 offset-4 rounded">Create Your Amazon account
-           </button>
+        <form class="col-md-4 offset-md-4 btn-block rounded container-fluid">
+            <button id="create-account-button" type="submit" 
+            class="btn btn-sm gradient-button btn-block">Create your Amazon account
+            </button>
+        </form>
         </div>
 
     <footer id="footer" class="text-center border-top">
